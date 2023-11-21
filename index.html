@@ -21,6 +21,8 @@
         justify-content: center;
         margin: 0;
         padding: 10px;
+        flex-wrap: wrap;
+
     }
 
 
@@ -29,6 +31,10 @@
         color: black;
         padding: 10px;
 
+    }
+
+    nav li {
+        margin: 5px;
     }
 
     nav li a:hover {
@@ -59,6 +65,20 @@
         cursor: pointer;
     }
 
+    @media only screen and (max-width: 600px) {
+        /* ... (penyesuaian lainnya) */
+
+        .pf {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+
     .pf {
         display: flex;
         justify-content: center;
@@ -86,6 +106,7 @@
         size: 100;
     }
 
+
     footer {
         text-align: center;
     }
@@ -101,8 +122,8 @@
         </ul>
 
     </nav>
-    <h2>Portofolioku</h2>
-    <br><br><br><br><br>
+    <h2></h2>
+
 
     <div class="pf">
         <img src="https://png.pngtree.com/png-clipart/20231018/original/pngtree-business-portfolio-3d-character-illustration-png-image_13355677.png"
@@ -110,16 +131,14 @@
         <pre>
 <span class="p1">Halo ! </span> <br>
 <span class="p2">I am a superman. hahaha</span> <br>
-<span class="p3">I am a Web developer & mobile aplication developer</span>
+<span class="p3">I am a Web developer & mobile aplication developer</span>   
     </pre>
 
 
     </div>
 
-    <div class="sm">
-        <i class="fab fa-html5"></i>
 
-    </div>
+
 
     <footer>
         <p>Directed By Aldi Putra Pratama 2023 &copy;</p>
